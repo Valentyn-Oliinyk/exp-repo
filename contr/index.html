@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Контрольна</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:ital,wght@1,100&family=Sono:wght@200&display=swap');
+            #one{
+                background-color: aqua;
+                color:purple;
+            }
+            #two{
+                background-color: bisque;
+                color: blue;
+            }
+            #three{
+                background-color: chartreuse;
+                color: brown;
+            }
+            #four{
+                background-color: cornflowerblue;
+                color:white;
+            }
+            #z1{
+                border: 1px solid;
+                width: 60px;
+                background-color: rgb(218, 75, 218);
+                color: black;
+                font-size: 120%;
+                font-family: 'Roboto', sans-serif;
+                
+            }
+            #z2{
+                border: 1px solid;
+                width: 80px;
+                background-color: rgb(9, 9, 47);
+                color: aliceblue;
+                font-size: 120%;
+                font-family: 'Roboto', sans-serif;
+            }
+            #z3{
+                border: 1px solid;
+                width: 100px;
+                background-color: rgb(77, 30, 30);
+                color: bisque;
+                font-size: 120%;
+                font-family: 'Roboto', sans-serif;
+            }
+            #z4{
+                border: 1px solid;
+                width: 120px;
+                background-color: rgb(36, 34, 34);
+                color: antiquewhite;
+                font-size: 120%;
+                font-family: 'Roboto', sans-serif;
+            }
+            
+            .zag{
+                font-family: 'Sono', sans-serif;
+            }
+            .bloc{
+                font-family: 'Open Sans', sans-serif;
+            }
+            @media(min-width:1200px){
+                section{
+                    
+                    display: flex;
+                
+                }
+                div{
+                    flex: 1;
+                }
+            }
+            @media(min-width:992px) and (max-width:1200px){
+                #sec2{
+                    display: flex;
+                    
+                }
+                #one{
+                    flex: 1;
+                }
+                #two{
+                    flex: 1;
+                }
+                #three{
+                    flex: 1;
+                }
+                #four{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            @media(min-width:768px) and (max-width:992px){
+                
+            section div{
+                display: flex;
+                flex-direction: row; 
+                flex-wrap: wrap;
+            }
+            section div{
+                flex: 200px;
+            }
+            
+            }
+            @media(max-width:768px){
+                div{
+                    display: flex;
+                    flex-direction: column;
+                
+                }
+            }
+            #one{
+                display: flex;
+            }
+            p:first-child{
+                
+                align-self: flex-end;
+            }
+            #two{
+                display: flex;
+            }
+            p:first-child{
+                align-self: flex-end;
+            }
+            #three{
+                display: flex;
+            }
+            p:first-child{
+                align-self: flex-end;
+            }
+            #four{
+                display: flex;
+            }
+            p:first-child{
+                align-self: flex-end;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1 class="zag">Домашня контрольна робота</h1>
+        <h2 class="zag">Олійника Валенитина Ярославовича</h2>
+        <section >
+            <section id="sec2">
+             <div id="one">
+               <p id="z1">Текст</p>
+                <p class="blok">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Id perferendis rem consequatur qui! Laudantium doloribus ipsa cumque at deserunt rerum magnam.
+                     Veniam ipsa totam in! Quia repellat illum nulla minus.</p>
+             </div>
+             <div id="two">
+                 <p id="z2">Список</p>
+                 <ol class="blok">
+                     <li>Хліб</li>
+                     <li>Масло</li>
+                     <li>Мінеральна вода</li>
+                     <li>Крупи</li>
+                      <ol>
+                           <li>Гречка</li>
+                           <li>Рис</li>
+                          <li>Манка</li>
+                      </ol>
+                     <li>Макарони</li>
+                  </ol>
+              </div>
+              <div id="three">
+                   <p id="z3">Таблиця</p>
+                  <table border="1">
+                       <tr class="blok">
+                           <th>Місто</th>
+                           <th>Населення</th>
+                      </tr>
+                       <tr class="blok">
+                           <td>Дублін</td>
+                            <td>1,1 млн.ос.</td>
+                     </tr>
+                     <tr class="blok">
+                          <td>Ер-Ріяд</td>
+                          <td>7,6 млн.ос.</td>
+                       </tr>
+                        <tr class="blok">
+                            <td>Мюнхен</td>
+                            <td>1,4 млн.ос.</td>
+                     </tr>
+                     <tr class="blok">
+                           <td>Детройт</td>
+                            <td>0,6 млн.ос.</td>
+                     </tr>
+                 </table>
+             </div>
+             </section>
+             <div id="four">
+                  <p id="z4">Зображення</p>
+                  <img src="420x320.gif" width="420" height="320" alt="Зображення">
+             </div>
+        </section>
+        <a href="https://place-hold.it/450x450" target="_blank">Посилання на зображення</a>
+    </body>
+</html>
